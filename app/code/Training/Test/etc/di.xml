@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">     
+	<preference for="Training\Test\Api\ProductRepositoryInterface" type="Magento\Catalog\Model\ProductRepository" />
+	<type name="Training\Test\MagentoU\Test">       
+	 	<arguments>             
+	 		<argument name="justAParameter" xsi:type="string">Hello world!</argument> 
+	 		<argument name="data" xsi:type="array">     
+	 			<item name="test-array-item" xsi:type="string">Test Array Item!!!</item> 
+	 		</argument>         
+	 	</arguments>
+    </type>
+    <type name="Magento\Catalog\Model\Product">
+    	<plugin name="change-price" type="Training\Test\Model\Product\Plugin" />
+    </type>
+    <type name="Magento\Theme\Block\Html\Footer">
+    	<plugin name="footer" type="Training\Test\Block\Html\Footer\Plugin" />
+    </type>
+    <type name="Magento\Theme\Block\Html\Breadcrumbs">
+    	<plugin name="breadcrumbs" type="Training\Test\Block\Html\Breadcrumbs\Plugin" />
+    </type>
+</config> 
