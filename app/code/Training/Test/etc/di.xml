@@ -18,4 +18,5 @@
     <type name="Magento\Theme\Block\Html\Breadcrumbs">
     	<plugin name="breadcrumbs" type="Training\Test\Block\Html\Breadcrumbs\Plugin" />
     </type>
+    <preference for="Magento\Framework\App\FrontControllerInterface" type="Training\Test\App\FrontController" /> 
 </config> 
