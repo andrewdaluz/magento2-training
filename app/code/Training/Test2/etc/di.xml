@@ -7,4 +7,5 @@
 	 		</argument>
 	 	</arguments>
     </type> 
+    <preference for="Training\Test2\Model\Config\ConfigInterface" type="Training\Test2\Model\Config" /> 
 </config> 
